@@ -1,0 +1,47 @@
+﻿@page
+@model PreLoginModel
+@{
+    ViewData["Title"] = "Pre Login";
+}
+
+<style>
+
+    body, html {
+        overflow: hidden;
+        background-image: url('/resources/testgymhomeimage.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .test {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+    }
+
+    .card {
+        width: 400px;
+        height: 300px;
+        border-radius: 15px;
+    }
+</style>
+
+<body>
+
+<div class="test">
+    <div class="card mb-4 rounded-3 shadow-lg" style="background-color: darkviolet; color: white; text-align: center">
+        <div class="card-header py-3">
+            <h4 class="my-0 fw-normal" style="font-size: xx-large">Welcome</h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4" >
+                <li><partial name="_LoginPartial" /></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
