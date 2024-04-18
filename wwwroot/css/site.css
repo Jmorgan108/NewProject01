@@ -151,3 +151,7 @@ body {
 #register:hover::before {
     transform: translateX(-50%) scale(1);
 }
+
+hr {
+    background-color: white;
+}
